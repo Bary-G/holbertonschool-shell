@@ -1,2 +1,2 @@
 #!/bin/bash
-bash -c 'compgen -e; compgen -A function; compgen -v'
+bash -c 'compgen -e' | bash -c 'compgen -A function' | bash -c 'compgen -v'
